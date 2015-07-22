@@ -794,7 +794,7 @@ class odf_style(odf_element):
 
 
     def get_master_page(self):
-        return self.get_attributes('style:master-page-name')
+        return self.get_attribute('style:master-page-name')
 
 
     def set_master_page(self, name):
