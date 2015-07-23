@@ -383,7 +383,7 @@ class odf_document(object):
         if manifest.get_media_type('Pictures/') is None:
             manifest.add_full_path('Pictures/')
 
-        full_path = os.path.join('Pictures', name)
+        full_path = 'Pictures/' + name
         self.container.set_part(full_path, handler.read())
 
         # Update manifest
